@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tapper</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    
+    <div class="block_wrapper">
+        <div class="block_item"></div>
+        <div class="block_item"></div>
+        <div class="block_item"></div>
+        <div class="block_item"></div>
+        <div class="block_item"></div>
+        <div class="block_item"></div>
+        <div class="block_item"></div>
+        <div class="block_item"></div>
+        <div class="block_item"></div>
+        <div class="block_item"></div>
+        <div class="block_item"></div>
+        <div class="block_item"></div>  
+        <div class="block_item"></div>  
+        <div class="block_item"></div>  
+        <div class="block_item"></div>  
+    </div>
+
+    <script>
+        window.addEventListener('click' , e => {
+            const red = Math.round(Math.random()*255)
+            const green = Math.round(Math.random()*255)
+            const blue = Math.round(Math.random()*255)
+            console.log(red, green, blue)
+            e.target.style.background = `rgb(${red},${green},${blue})`
+            setTimeout(() => {
+                e.target.style.background = 'transparent'
+            }, 1000)
+        })
+    </script>
+</body>
+</html>
